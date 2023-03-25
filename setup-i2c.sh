@@ -1,0 +1,1 @@
+sudo bash -c "echo 'uboot_overlay_addr4=/lib/firmware/BB-I2C1-00A0.dtbo' >> /boot/uEnv.txt"
