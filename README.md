@@ -34,7 +34,17 @@ a green LED should light up on the board.
 ## 3. Enable the I2C port
 
 i2c-1, which is the bus that the I2C port is connected to, is not enabled by default.
-Run the setup-i2c.sh script and reboot to enable it
+Run the `setup-i2c.sh` script and reboot to enable it
 
 ## 4. Setup python libraries
 
+A few of the necessary python libraries that we need don't work out of the box, so I forked them.
+
+[Adafruit_Blinka](https://github.com/adafruit/Adafruit_Blinka) didn't support the beaglebone
+blue out of the box, so I added minimal board support that essentially just provides i2c
+access.
+
+[Adafruit_BBIO](https://github.com/adafruit/adafruit-beaglebone-io-python) couldn't compile on 
+newer beaglebone images, but the fix mentioned in issue #362 seems to work.
+
+You can install all the necessary components using the `setup-python.sh` script.

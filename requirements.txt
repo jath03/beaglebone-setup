@@ -1,0 +1,3 @@
+adafruit-circuitpython-bno055
+git+https://github.com/jath03/adafruit-beaglebone-io-python.git
+git+https://github.com/jath03/Adafruit_Blinka.git@bbblue
