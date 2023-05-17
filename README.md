@@ -40,9 +40,10 @@ Run the `setup-i2c.sh` script and reboot to enable it
 
 A few of the necessary python libraries that we need don't work out of the box, so I forked them.
 
-[Adafruit_Blinka](https://github.com/adafruit/Adafruit_Blinka) didn't support the beaglebone
+~~[Adafruit_Blinka](https://github.com/adafruit/Adafruit_Blinka) didn't support the beaglebone
 blue out of the box, so I added minimal board support that essentially just provides i2c
-access.
+access.~~
+My pull request got merged, you can now use the upstream version.
 
 [Adafruit_BBIO](https://github.com/adafruit/adafruit-beaglebone-io-python) couldn't compile on 
 newer beaglebone images, but the fix mentioned in issue #362 seems to work.
